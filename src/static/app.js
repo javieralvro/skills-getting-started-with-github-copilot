@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        `/activities/${encodeURIComponent(activity)}/signup?email=${encodeURIComponent(email)}`,
+        `/activities/${activity}/signup?email=${email}`,
         { method: "DELETE" }
       );
       const result = await response.json();
